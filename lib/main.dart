@@ -159,7 +159,6 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: _itemClique,
         currentIndex: _indexSelectionne,
       ),*/
-
       /*drawer: Drawer(
         child: Column(
           children: <Widget>[
