@@ -102,12 +102,16 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-          onPressed: _likeThis, backgroundColor: Colors.red, child: _coeur),
+        onPressed: _likeThis,
+        backgroundColor: Colors.red,
+        shape: CircleBorder(),
+        child: _coeur,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: const BottomAppBar(
         color: Colors.red,
         child: SizedBox(
-          height: 50,
+          //height: 100,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
