@@ -95,8 +95,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '${_affichage}',
-              style: TextStyle(color: Colors.red, fontSize: 40),
+              _affichage,
+              style: const TextStyle(color: Colors.red, fontSize: 40),
             ),
           ],
         ),
@@ -104,13 +104,13 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
           onPressed: _likeThis, backgroundColor: Colors.red, child: _coeur),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: BottomAppBar(
+      bottomNavigationBar: const BottomAppBar(
         color: Colors.red,
-        child: Container(
+        child: SizedBox(
           height: 50,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const <Widget>[
+            children: <Widget>[
               IconButton(
                 icon: Icon(
                   Icons.add_location,
@@ -159,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onTap: _itemClique,
         currentIndex: _indexSelectionne,
       ),*/
-      /*drawer: Drawer(
+      drawer: const Drawer(
         child: Column(
           children: <Widget>[
             DrawerHeader(
@@ -176,7 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text('Lien 3'),
           ],
         ),
-      ),*/
+      ),
     );
   }
 }
